@@ -1,0 +1,23 @@
+// 設計系統變數
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+
+// Bootstrap 變數覆寫
+$primary: $primary-color;
+$secondary: $secondary-color;
+$success: $success-color;
+
+$font-family-base: "Inter", system-ui, sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+$border-radius: 0.5rem;
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
