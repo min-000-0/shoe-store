@@ -1,0 +1,54 @@
+@import "design-tokens";
+
+// 主要品牌色彩
+$primary: $primary-400;
+$secondary: $neutral-600;
+$success: $success-300;
+$danger: $danger-300;
+$warning: $warning-300;
+$info: $info-300;
+
+// 字體系統
+$font-family-base: $font-family-primary;
+$font-family-sans-serif: $font-family-primary;
+
+// 字體大小
+$font-size-base: $font-size-base;
+$font-weight-base: $font-weight-regular;
+
+// 標題字體
+$h1-font-size: $h1;
+$h2-font-size: $h2;
+$h3-font-size: $h3;
+$h4-font-size: $h4;
+$h5-font-size: $h5;
+$h6-font-size: $h6;
+
+// 行高
+$headings-line-height: $line-height-tight;
+$line-height-base: $line-height-normal;
+
+// 字體顏色
+$body-color: $text-primary;
+$headings-color: $text-primary;
+
+// 間距系統 (Bootstrap 的 spacer)
+$spacer: $spacing-m; // 16px 作為基準
+$spacers: (
+  0: 0,
+  1: $spacing-xxs,
+  // 4px
+  2: $spacing-xs,
+  // 8px
+  3: $spacing-m,
+  // 16px (default)
+  4: $spacing-l,
+  // 24px
+  5: $spacing-xl,
+  // 32px
+);
+
+// 圓角系統
+$border-radius: $radius-sm;
+$border-radius-sm: $radius-sm;
+$border-radius-lg: $radius-md;

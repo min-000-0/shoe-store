@@ -1,15 +1,20 @@
-// 工具層
-@import "../../assets/scss/utils/variables";
+// Settings
+@import "../scss/settings/design-tokens";
+@import "../scss/settings/bootstrap-overrides";
 
-// 第三方庫
+// utils
+@import "../../assets/scss/utils/custom-variables";
+@import "./../scss/utils/base";
+
+// Bootstrap
 @import "../../node_modules/bootstrap";
 
-// 佈局層
+// Layout
 @import "./layout/header";
 @import "./layout/footer.scss";
 
-// 組件層
+// Components
 @import "./components/button";
 
-// 頁面層
+// Pages
 @import "./pages/index.scss";
