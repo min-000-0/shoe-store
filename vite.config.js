@@ -31,6 +31,11 @@ export default defineConfig({
     ViteEjsPlugin(),
     moveOutputPlugin(),
   ],
+  resolve: {
+    alias: {
+      "~bootstrap": path.resolve(__dirname, "node_modules/bootstrap"),
+    }
+  }
   server: {
     // 啟動 server 時預設開啟的頁面
     open: "pages/index.html",
