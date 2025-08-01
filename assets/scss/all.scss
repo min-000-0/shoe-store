@@ -1,6 +1,15 @@
+// 工具層
 @import "../../assets/scss/utils/variables";
+
+// 第三方庫
 @import "../../node_modules/bootstrap";
 
-@import "./layout/header.scss";
+// 佈局層
+@import "./layout/header";
 @import "./layout/footer.scss";
+
+// 組件層
+@import "./components/button";
+
+// 頁面層
 @import "./pages/index.scss";
