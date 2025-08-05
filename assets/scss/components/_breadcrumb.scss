@@ -1,0 +1,15 @@
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "/";
+  padding: 0 12px;
+  color: var(--neutral-300);
+  font-weight: 700;
+  display: inline-block;
+}
+
+.breadcrumb-item {
+  display: flex;
+}
+
+.breadcrumb-link {
+  color: var(--neutral-600);
+}

@@ -1,5 +1,25 @@
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// 變數、通用樣式
+@import "./helper/variables";
+@import "./helper/utils";
 
+// 第三方套件
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-@import './pages/index.scss';
+// base
+@import "./base/reset";
+@import "./base/base";
+
+// components
+@import "./components/breadcrumb";
+@import "./components/button";
+@import "./components/icon";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+
+// pages
+@import "./pages/index";
+@import "./pages/product-list";
+@import "./pages/product-detail";
+@import "./pages/brand-story";

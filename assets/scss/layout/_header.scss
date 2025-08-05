@@ -1,4 +1,7 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+nav a {
+  cursor: pointer;
+
+  &:hover {
+    color: $primary-400;
+  }
 }
