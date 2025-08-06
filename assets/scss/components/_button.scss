@@ -10,14 +10,18 @@
 }
 
 .btn-dark {
-  background-color: var(--neutral-900);
-  color: var(--neutral-0);
+  background-color: $neutral-900;
+  color: $neutral-0;
+
+  &:hover {
+    background-color: $neutral-700;
+  }
 }
 
 .btn-light {
-  border: 1px solid var(--neutral-900);
+  border: 1px solid $neutral-900;
 }
 
 .border-bottom {
-  border-bottom: 1px solid var(--neutral-300);
+  border-bottom: 1px solid $neutral-300;
 }

@@ -1,19 +1,18 @@
 .category .active {
-  color: var(--primary-400);
+  color: $primary-400;
 }
 
 .page-item .btn {
   padding: 8px 15px;
   border-radius: 0;
   font-weight: 400;
+
+  &:hover {
+    background-color: $neutral-100;
+  }
 }
 
 .page-item .active {
-  background-color: var(--primary-300);
+  background-color: $primary-300;
   font-weight: 500;
-}
-
-.btn-dark {
-  background-color: var(--neutral-900);
-  color: var(--neutral-0);
 }
