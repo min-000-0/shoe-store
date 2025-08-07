@@ -19,3 +19,12 @@
     color: $neutral-900;
   }
 }
+
+@media (max-width: 767px) {
+  .breadcrumb-item + .breadcrumb-item::before {
+    padding: 0 8px;
+  }
+  .breadcrumb-item {
+    font-size: 14px;
+  }
+}

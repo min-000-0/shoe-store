@@ -7,21 +7,41 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-}
 
-.btn-dark {
-  background-color: $neutral-900;
-  color: $neutral-0;
+  &.btn-light {
+    border: 1px solid $neutral-900;
 
-  &:hover {
-    background-color: $neutral-700;
+    &:hover {
+      background-color: $neutral-900;
+      color: $neutral-0;
+    }
+
+    &:focus {
+      color: $neutral-0;
+      // x偏移 y偏移 模糊範圍 擴散距離
+      background-color: $neutral-900;
+      box-shadow: 0 0 0 3px rgba($neutral-900, 0.1);
+    }
+  }
+
+  &.btn-dark {
+    background-color: $neutral-900;
+    color: $neutral-0;
+
+    &:hover {
+      background-color: $neutral-700;
+    }
+
+    &:focus {
+      color: $neutral-0;
+      // x偏移 y偏移 模糊範圍 擴散距離
+      box-shadow: 0 0 0 3px rgba($neutral-900, 0.1);
+    }
   }
 }
 
-.btn-light {
-  border: 1px solid $neutral-900;
-}
-
-.border-bottom {
-  border-bottom: 1px solid $neutral-300;
+@media (max-width: 576px) {
+  .btn {
+    padding: 8px 16px;
+  }
 }

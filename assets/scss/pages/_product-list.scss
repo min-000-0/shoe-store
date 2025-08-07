@@ -1,18 +1,27 @@
-.category .active {
-  color: $primary-400;
-}
+.category {
+  li {
+    padding: 4px 0;
+  }
 
-.page-item .btn {
-  padding: 8px 15px;
-  border-radius: 0;
-  font-weight: 400;
-
-  &:hover {
-    background-color: $neutral-100;
+  .active {
+    color: $primary-400;
   }
 }
 
-.page-item .active {
-  background-color: $primary-300;
-  font-weight: 500;
+.page-item {
+  .btn {
+    padding: 8px 15px;
+    border-radius: 0;
+    font-weight: 400;
+
+    &:hover {
+      background-color: $neutral-100;
+    }
+
+    &.active {
+      background-color: $primary-300;
+      font-weight: 500;
+      pointer-events: none;
+    }
+  }
 }

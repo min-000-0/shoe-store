@@ -1,3 +1,13 @@
-.index-title {
-  font-size: 100px;
+.product {
+  position: relative;
+
+  .product-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 12px;
+    background-color: $primary-100;
+    font-size: 14px;
+    color: $primary-400;
+  }
 }

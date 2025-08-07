@@ -13,6 +13,10 @@
   padding-right: 12px;
 }
 
+.border-bottom {
+  border-bottom: 1px solid $neutral-300;
+}
+
 /* Grid System */
 .row {
   margin-left: -12px;
@@ -82,6 +86,51 @@
   padding-right: 12px;
 }
 
+@media (max-width: 767px) {
+  .row {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  .col-md-1 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100% / 4);
+  }
+  .col-md-2 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100% / 4 * 2);
+  }
+  .col-md-3 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: calc(100% / 4 * 3);
+  }
+  .col-md-4 {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 100%;
+  }
+  .flex-md-column {
+    flex-direction: column;
+  }
+  .flex-md-nowrap {
+    flex-wrap: nowrap;
+  }
+  .gap-md-4 {
+    gap: 4px;
+  }
+  .gap-md-8 {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .overflow-x-md-auto {
+    overflow-x: auto;
+  }
+}
+
 /* 寬度 */
 .w-50 {
   width: 50%;
@@ -91,6 +140,31 @@
    ========================================================================== */
 .d-flex {
   display: flex;
+}
+
+.d-none {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .d-md-block {
+    display: block;
+  }
+  .d-md-flex {
+    display: flex;
+  }
+  .d-md-none {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .d-sm-block {
+    display: block;
+  }
+  .d-sm-none {
+    display: none;
+  }
 }
 
 .flex-wrap {
@@ -129,6 +203,13 @@
 
 .display1 {
   font-size: 64px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+}
+
+.display2 {
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: 0.05em;
@@ -176,9 +257,55 @@
   letter-spacing: 0.05em;
 }
 
+@media (max-width: 767px) {
+  .h1-md {
+    font-size: 40px;
+  }
+  .h2-md {
+    font-size: 32px;
+  }
+  .h3-md {
+    font-size: 28px;
+  }
+  .h4-md {
+    font-size: 24px;
+  }
+  .h5-md {
+    font-size: 20px;
+  }
+  .h6-md {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .h3-sm {
+    font-size: 28px;
+  }
+  .h4-sm {
+    font-size: 24px;
+  }
+  .h5-sm {
+    font-size: 20px;
+  }
+  .h6-sm {
+    font-size: 16px;
+  }
+}
+
 /* 文字大小 */
 .text-sm {
   font-size: 14px;
+}
+
+.text-lg {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  .text-md-md {
+    font-size: 16px;
+  }
 }
 
 /* 文字顏色
@@ -187,8 +314,16 @@
   color: $neutral-0;
 }
 
+.text-neutral-500 {
+  color: $neutral-500;
+}
+
 .text-neutral-600 {
   color: $neutral-600;
+}
+
+.text-primary-300 {
+  color: $primary-300;
 }
 
 .text-primary-400 {
@@ -239,6 +374,12 @@
 
 .p-32 {
   padding: 32px;
+}
+
+/* 水平 padding */
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* 垂直 padding */
@@ -298,6 +439,54 @@
 /* 右邊 padding */
 .pe-8 {
   padding-right: 8px;
+}
+
+@media (max-width: 767px) {
+  .p-md-24 {
+    padding: 24px;
+  }
+  .px-md-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .py-md-95 {
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+  }
+  .py-md-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .py-md-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .py-md-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .py-md-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .pb-md-32 {
+    padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .px-sm-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+  .py-sm-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .py-sm-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 /* 間距 - Margin
@@ -376,4 +565,40 @@
 /* 左邊 margin */
 .ml-50 {
   margin-left: 50%;
+}
+
+@media (max-width: 767px) {
+  .mb-md-0 {
+    margin-bottom: 0;
+  }
+  .mb-md-8 {
+    margin-bottom: 8px;
+  }
+  .mb-md-12 {
+    margin-bottom: 12px;
+  }
+  .mb-md-16 {
+    margin-bottom: 16px;
+  }
+  .mb-md-24 {
+    margin-bottom: 24px;
+  }
+  .mb-md-32 {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .me-sm-0 {
+    margin-right: 0;
+  }
+  .me-sm-16 {
+    margin-right: 16px;
+  }
+  .mb-sm-4 {
+    margin-bottom: 4px;
+  }
+  .mb-sm-8 {
+    margin-bottom: 8px;
+  }
 }
