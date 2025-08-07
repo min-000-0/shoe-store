@@ -11,3 +11,11 @@
     color: $primary-400;
   }
 }
+
+@media (max-width: 767px){
+  .product-md-col {
+    min-width: 316px;
+padding-left: 8px;
+padding-right: 8px;
+  }
+}
