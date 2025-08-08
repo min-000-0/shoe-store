@@ -9,6 +9,10 @@
   border: none;
   background-color: transparent;
 
+  &:disabled {
+    color: rgba($neutral-900, .4)
+  }
+
   &.btn-light {
     border: 1px solid $neutral-900;
 
@@ -23,6 +27,7 @@
       background-color: $neutral-900;
       box-shadow: 0 0 0 3px rgba($neutral-900, 0.1);
     }
+    
   }
 
   &.btn-dark {
