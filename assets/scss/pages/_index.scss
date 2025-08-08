@@ -24,52 +24,6 @@
   }
 }
 
-.index-banner {
-  text-align: center;
-  background-image: url(/assets/images/banners/banner-co-branded.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 100px 0;
-  position: relative;
-
-  .star-img {
-    position: absolute;
-    width: 48px;
-    top: 68px;
-    left: calc(50% - 397px);
-  }
-
-  .sparkle-img {
-    position: absolute;
-    width: 76px;
-    bottom: 132px;
-    right: calc(50% - 357px);
-  }
-}
-
-@media(max-width: 767px) {
-  .index-banner {
-    padding: 64px 0;
-    background-image: url(/assets/images/banners/banner-co-branded-sm.png);
-    overflow: hidden;
-
-    .btn {
-      padding: 12px 24px;
-    }
-    
-    .star-img {
-      top: 32px;
-      left: -20px;
-    }
-    
-    .sparkle-img {
-      bottom: 104px;
-      right: -28px;
-    }
-  }
-}
-
 .category {
   position: relative;
 
@@ -79,7 +33,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgba(black, .4);
+    background-color: rgba(black, 0.4);
     color: white;
     display: flex;
     flex-direction: column;
@@ -98,18 +52,17 @@
     width: calc(100% / 12 * 4);
     padding: 4px;
   }
-  
+
   &-col-6 {
     width: calc(100% / 12 * 6);
     padding: 4px;
   }
-  
+
   &-col-12 {
     width: 100%;
     padding: 4px;
   }
 }
-
 
 @media (max-width: 767px) {
   .inspiration-row {

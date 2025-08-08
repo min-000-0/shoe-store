@@ -1,0 +1,81 @@
+.index-banner {
+  position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 200px;
+    transform: translate(0, -50%);
+  }
+  @media (max-width: 767px) {
+    .banner-content {
+      left: 24px;
+    }
+  }
+}
+
+.index-banner2 {
+  position: relative;
+  text-align: center;
+  background-image: url(/assets/images/banners/banner-co-branded.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+
+  .star-img {
+    position: absolute;
+    width: 48px;
+    top: 68px;
+    left: calc(50% - 397px);
+  }
+
+  .sparkle-img {
+    position: absolute;
+    width: 76px;
+    bottom: 132px;
+    right: calc(50% - 357px);
+  }
+
+  @media (max-width: 767px) {
+    padding: 64px 0;
+    background-image: url(/assets/images/banners/banner-co-branded-sm.png);
+    overflow: hidden;
+
+    .btn {
+      padding: 12px 24px;
+    }
+
+    .star-img {
+      top: 32px;
+      left: -20px;
+    }
+
+    .sparkle-img {
+      bottom: 104px;
+      right: -28px;
+    }
+  }
+}
+
+.brand-story-banner {
+  background-image: url(../images/heroes/hero.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 152px 0;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .brand-story-banner {
+    padding: 87px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/heroes/hero-sm.png);
+  }
+}

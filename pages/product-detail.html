@@ -6,10 +6,11 @@
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <main class="container mb-40">
-      <div class="row py-64">
+    <main class="container mb-40 mb-md-24">
+      <div class="row py-64 py-md-0">
         <!-- 產品圖片 -->
-        <div class="col-7">
+        <!-- 桌機：靜態排列 -->
+        <div class="col-7 col-lg-4 d-block d-md-none">
           <div class="product-row">
             <div class="product-col mb-8">
               <img
@@ -61,10 +62,63 @@
             </div>
           </div>
         </div>
+        <!-- 手機：Swiper 輪播 -->
+        <div class="swiper-container d-none d-md-block mb-md-24">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image.png?raw=true"
+                alt="image"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-1.png?raw=true"
+                alt="image-1"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-2.png?raw=true"
+                alt="image-2"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-3.png?raw=true"
+                alt="image-3"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-4.png?raw=true"
+                alt="image-4"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-5.png?raw=true"
+                alt="image-5"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-6.png?raw=true"
+                alt="image-6"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/image-7.png?raw=true"
+                alt="image-7"
+              />
+            </div>
+          </div>
+        </div>
         <!-- 產品描述 -->
-        <div class="col-5">
+        <div class="col-5 col-lg-4 col-md-4">
           <!-- 麵包屑導覽 -->
-          <nav class="mb-12">
+          <nav class="mb-12 mb-md-8">
             <ol class="d-flex">
               <li class="breadcrumb-item">
                 <a href="index.html" class="breadcrumb-link">首頁</a>
@@ -79,8 +133,10 @@
             </ol>
           </nav>
           <div class="mb-32">
-            <h1 class="h2 mb-16">Platform 404</h1>
-            <p class="h5 text-primary-400 mb-16 d-flex align-center">
+            <h1 class="h2 h4-md mb-16 mb-md-12">Platform 404</h1>
+            <p
+              class="h5 h6-md text-primary-400 mb-16 mb-md-12 d-flex align-center"
+            >
               NT$2,600<del class="del-price">NT$3,200</del>
             </p>
             <p class="mb-12">
@@ -92,7 +148,7 @@
             </p>
           </div>
           <!-- 產品顏色 -->
-          <div class="mb-32">
+          <div class="mb-32 mb-md-24">
             <h3 class="mb-8">顏色</h3>
             <div class="d-flex">
               <a href="#" class="product-color me-8">
@@ -114,7 +170,7 @@
             </div>
           </div>
           <!-- 產品尺寸 -->
-          <div class="mb-48">
+          <div class="mb-48 mb-md-24">
             <h3 class="mb-8">尺寸</h3>
             <div class="d-flex flex-wrap gap-8 mb-8">
               <button type="button" class="btn btn-product-size active">
@@ -148,9 +204,10 @@
             <p class="text-sm text-danger">僅剩 3 雙</p>
           </div>
           <!-- 收藏/預約 -->
-          <div class="product-action mb-32">
+          <div class="product-action flex-row-reverse mb-32">
             <button type="button" class="btn btn-light">
-              <i class="bi bi-heart"></i>加入收藏
+              <i class="bi bi-heart icon"></i
+              ><span class="d-md-none">加入收藏</span>
             </button>
             <button type="button" class="btn btn-dark">
               <i class="bi bi-handbag"></i>門市預約試穿
@@ -184,10 +241,10 @@
           </ul>
         </div>
       </div>
-      <div class="py-48">
+      <div class="py-48 py-md-40">
         <h2 class="h4 mb-16">你可能也喜歡...</h2>
-        <div class="row">
-          <div class="col-3">
+        <div class="row flex-md-nowrap overflow-x-md-auto product-md-row">
+          <div class="col-3 product-md-col">
             <a href="product-detail.html">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true"
@@ -198,7 +255,7 @@
               <p>NT2,600</p>
             </a>
           </div>
-          <div class="col-3">
+          <div class="col-3 product-md-col">
             <a href="product-detail.html">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true"
@@ -209,7 +266,7 @@
               <p>NT4,000</p>
             </a>
           </div>
-          <div class="col-3">
+          <div class="col-3 product-md-col">
             <a href="product-detail.html">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true"
@@ -220,7 +277,7 @@
               <p>NT3,200</p>
             </a>
           </div>
-          <div class="col-3">
+          <div class="col-3 product-md-col">
             <a href="product-detail.html">
               <img
                 src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true"
@@ -234,11 +291,9 @@
         </div>
       </div>
     </main>
-    <div class="bg-primary-200 d-flex justify-center align-center py-24">
-      <p class="h4 me-24">加入會員取得 9 折優惠</p>
-      <button type="button" class="btn btn-dark">馬上註冊</button>
-    </div>
+
     <%- include('./layout/footer'); -%>
+
     <script type="module" src="../main.js"></script>
   </body>
 </html>

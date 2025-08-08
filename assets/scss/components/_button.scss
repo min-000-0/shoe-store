@@ -39,9 +39,15 @@
       box-shadow: 0 0 0 3px rgba($neutral-900, 0.1);
     }
   }
-  
+
   &.btn-primary {
     background-color: $primary-300;
+  }
+}
+
+.btn {
+  @media (max-width: 767px) {
+    padding: 12px 24px;
   }
 }
 

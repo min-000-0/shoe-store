@@ -12,6 +12,27 @@
   padding-left: 4px;
 }
 
+@media (max-width: 992px) {
+  .product-row {
+    margin-bottom: 40px;
+  }
+  .product-col {
+    width: calc(100% / 12 * 3);
+  }
+}
+
+.swiper-container {
+  margin-left: -6px;
+  margin-right: -6px;
+  overflow: hidden;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 /* 產品描述 */
 .del-price {
   font-size: 14px;
@@ -46,10 +67,35 @@
 .product-action {
   display: flex;
   gap: 8px;
-}
 
-.product-action .btn {
-  width: 50%;
+  .btn {
+    width: 50%;
+  }
+
+  @media (max-width: 767px) {
+    .btn-light {
+      width: 48px;
+      height: 48px;
+      border: none;
+    }
+
+    .btn-dark {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-light {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon {
+        padding-right: 0;
+      }
+    }
+  }
 }
 
 .product-action .bi {

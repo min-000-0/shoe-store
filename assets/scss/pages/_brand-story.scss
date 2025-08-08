@@ -1,20 +1,3 @@
-.banner {
-  background-image: url(../images/heroes/hero.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 152px 0;
-  text-align: center;
-}
-
-@media (max-width: 767px) {
-  .banner {
-    padding: 87px 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(../images/heroes/hero-sm.png);
-  }
-}
-
 .quote {
   border-radius: 12px;
   text-align: center;
