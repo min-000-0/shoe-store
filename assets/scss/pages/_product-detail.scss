@@ -46,6 +46,10 @@
   width: 64px;
   text-align: center;
   color: $neutral-600;
+
+  img:hover {
+    border: 2px solid $neutral-300;
+  }
 }
 
 /* 產品尺寸 */
@@ -72,34 +76,26 @@
     width: 50%;
   }
 
+  .bi {
+    margin-right: 8px;
+  }
+
   @media (max-width: 767px) {
     .btn-light {
       width: 48px;
       height: 48px;
       border: none;
+
+      .bi {
+        font-size: 24px;
+        margin-right: 0;
+      }
     }
 
     .btn-dark {
       flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .btn-light {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      .icon {
-        padding-right: 0;
-      }
     }
   }
-}
-
-.product-action .bi {
-  padding-right: 8px;
 }
 
 /* 產品資訊 */
