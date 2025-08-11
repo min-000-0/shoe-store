@@ -10,7 +10,7 @@
   background-color: transparent;
 
   &:disabled {
-    color: rgba($neutral-900, .4)
+    color: rgba($neutral-900, 0.4);
   }
 
   &.btn-light {
@@ -27,7 +27,6 @@
       background-color: $neutral-900;
       box-shadow: 0 0 0 3px rgba($neutral-900, 0.1);
     }
-    
   }
 
   &.btn-dark {
@@ -47,6 +46,14 @@
 
   &.btn-primary {
     background-color: $primary-300;
+
+    &:hover {
+      color: $primary-500;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($primary-300, 0.1);
+    }
   }
 }
 
