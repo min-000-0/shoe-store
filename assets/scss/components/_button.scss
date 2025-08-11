@@ -28,15 +28,17 @@
       box-shadow: 0 0 0 3px rgba($neutral-900, 0.1);
     }
 
-    &.btn-icon {
-      &:hover {
-        background-color: transparent;
-        color: $neutral-500;
-      }
-      &:focus {
-        background-color: transparent;
-        color: inherit;
-        box-shadow: none;
+    @media (max-width: 767px) {
+      &.btn-icon {
+        &:hover {
+          background-color: transparent;
+          color: $neutral-600;
+        }
+        &:focus {
+          background-color: transparent;
+          color: inherit;
+          box-shadow: none;
+        }
       }
     }
   }
