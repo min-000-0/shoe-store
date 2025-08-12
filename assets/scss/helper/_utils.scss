@@ -220,6 +220,12 @@
   text-align: end;
 }
 
+@media (max-width: 767px) {
+  .text-md-start {
+    text-align: left;
+  }
+}
+
 /* 字體樣式
    ========================================================================== */
 
@@ -344,6 +350,9 @@
 @media (max-width: 767px) {
   .text-md-md {
     font-size: 16px;
+  }
+  .text-md-sm {
+    font-size: 14px;
   }
 }
 
