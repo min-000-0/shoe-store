@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script type="module" crossorigin src="/shoe-store/assets/main-DER1v--1.js"></script>
-    <link rel="stylesheet" crossorigin href="/shoe-store/assets/main-Dk-drjCL.css">
+    <title>產品列表</title>
+    <script type="module" crossorigin src="/shoe-store/assets/main-CopyXIN2.js"></script>
+    <link rel="stylesheet" crossorigin href="/shoe-store/assets/main-DgNfVwkS.css">
   </head>
   <body>
     <nav class="py-16 py-md-12">
@@ -23,7 +23,9 @@
         <li><a href="brand-story.html" class="py-12">品牌故事</a></li>
       </ul>
     </div>
-    <a class="icon-wrapper"><i class="bi bi-person icon-24"></i></a>
+    <a href="favorites.html" class="icon-wrapper"
+      ><i class="bi bi-person icon-24"></i
+    ></a>
   </div>
 </nav>
     <main class="container py-32 py-md-16 mb-48 mb-md-24">
@@ -41,9 +43,9 @@
         <!-- category -->
         <div class="col-2 d-md-none">
           <nav>
-            <ul class="category">
-              <li class="mb-16">
-                <a href="#" class="py-8 active">所有商品</a>
+            <ul class="product-list-category">
+              <li class="mb-16 active">
+                <a href="#" class="py-8">所有商品</a>
               </li>
               <li class="mb-16"><a href="#" class="py-8">慢跑鞋</a></li>
               <li class="mb-16"><a href="#" class="py-8">滑板鞋</a></li>
@@ -57,155 +59,116 @@
         <!-- product-list -->
         <div class="col-10 col-md-4">
           <div class="row">
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-24">
-                <a href="product-detail.html" class="product">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product.png?raw=true"
-                      alt="product"
-                      class="product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0">PLATFORM 404</h2>
-                  <p>NT$2,600</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product.png?raw=true"
+                  alt="product"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0">PLATFORM 404</h2>
+                <p>NT$2,600</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-24">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-1.png?raw=true"
-                      alt="product-1"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0">PLATFORM 404</h2>
-                  <p>NT$2,600</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-1.png?raw=true"
+                  alt="product-1"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0">PLATFORM 404</h2>
+                <p>NT$2,600</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-24">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true"
-                      alt="product-2"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0">VM001</h2>
-                  <p>NT$2,600</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-2.png?raw=true"
+                  alt="product-2"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0">VM001</h2>
+                <p>NT$2,600</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-24">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true"
-                      alt="product-3"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0">Melty Kiss</h2>
-                  <p>NT$4,000</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true"
+                  alt="product-3"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0">Melty Kiss</h2>
+                <p>NT$4,000</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-24">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true"
-                      alt="product-4"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0">BOOMBLOK</h2>
-                  <p>NT$3,200</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-4.png?raw=true"
+                  alt="product-4"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0">BOOMBLOK</h2>
+                <p>NT$3,200</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-24">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-5.png?raw=true"
-                      alt="product-5"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0">BOOMBLOK</h2>
-                  <p>NT$3,200</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-5.png?raw=true"
+                  alt="product-5"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0">BOOMBLOK</h2>
+                <p>NT$3,200</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-24">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-6.png?raw=true"
-                      alt="product-6"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0">R:UNER</h2>
-                  <p>NT$4,000</p>
-                </a>
-              </div>
+
+            <div class="col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-6.png?raw=true"
+                  alt="product-6"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0">R:UNER</h2>
+                <p>NT$4,000</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-24">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true"
-                      alt="product-7"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0">Sugar Snap</h2>
-                  <p>NT$4,000</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-24">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-7.png?raw=true"
+                  alt="product-7"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0">Sugar Snap</h2>
+                <p>NT$4,000</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2">
-              <div class="mb-48 mb-md-32">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-8.png?raw=true"
-                      alt="product-8"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0"><p>Neofoam</p></h2>
-                  <p>NT$4,000</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-32">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-8.png?raw=true"
+                  alt="product-8"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0"><p>Neofoam</p></h2>
+                <p>NT$4,000</p>
+              </a>
             </div>
-            <div class="col-4 col-md-2 d-none d-md-block">
-              <div class="mb-48 mb-md-32">
-                <a href="product-detail.html">
-                  <div class="mb-12 mb-md-8 product-img-wrap">
-                    <img
-                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-9.png?raw=true"
-                      alt="product-9"
-                      class="mb-12 mb-md-8 product-img"
-                    />
-                  </div>
-                  <h2 class="h6 mb-4 mb-md-0"><p>Buttermood</p></h2>
-                  <p>NT$4,000</p>
-                </a>
-              </div>
+            <div class="col-4 col-md-2 mb-48 mb-md-32 d-none d-md-block">
+              <a href="product-detail.html" class="product-card">
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-9.png?raw=true"
+                  alt="product-9"
+                  class="mb-12 mb-md-8"
+                />
+                <h2 class="h6 mb-4 mb-md-0"><p>Buttermood</p></h2>
+                <p>NT$4,000</p>
+              </a>
             </div>
           </div>
           <!-- pagination -->
@@ -224,7 +187,9 @@
             <li class="me-8 page-item">
               <button type="button" class="btn">3</button>
             </li>
-            <li class="me-8 page-item">...</li>
+            <li class="me-8 page-item">
+              <button type="button" class="btn disabled">...</button>
+            </li>
             <li class="me-12 page-item">
               <button type="button" class="btn">10</button>
             </li>
@@ -239,10 +204,13 @@
     </main>
 
     <!-- promo-banner -->
+
 <div class="bg-primary-200 d-flex justify-center align-center py-24">
   <p class="h4 h5-sm me-24 me-sm-16">加入會員取得 9 折優惠</p>
   <button type="button" class="btn btn-dark">馬上註冊</button>
 </div>
+
+
 <!-- footer-main -->
 <footer class="bg-neutral-100 py-64 py-sm-32">
   <div class="container">
