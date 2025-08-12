@@ -143,10 +143,18 @@
   width: 50%;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 /* Flexbox
    ========================================================================== */
 .d-flex {
   display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
 
 .d-none {
@@ -182,12 +190,20 @@
   align-items: center;
 }
 
+.align-end {
+  align-items: end;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
 }
 
 .gap-8 {
@@ -198,6 +214,10 @@
    ========================================================================== */
 .text-center {
   text-align: center;
+}
+
+.text-end {
+  text-align: end;
 }
 
 /* 字體樣式
@@ -391,6 +411,10 @@
   padding: 12px;
 }
 
+.p-16 {
+  padding: 16px;
+}
+
 .p-32 {
   padding: 32px;
 }
@@ -571,6 +595,10 @@
 
 .me-12 {
   margin-right: 12px;
+}
+
+.me-16 {
+  margin-right: 16px;
 }
 
 .me-24 {

@@ -46,25 +46,25 @@
   width: 64px;
   text-align: center;
   color: $neutral-600;
-
-  img:hover {
-    border: 2px solid $neutral-300;
-  }
 }
 
 /* 產品尺寸 */
 .btn-product-size {
   border: 1px solid $neutral-300;
   width: 160px;
-}
 
-.btn-product-size.active,
-.btn-product-size:hover {
-  border-color: $neutral-900;
-}
+  &.active {
+    border-color: $neutral-900;
+    pointer-events: none;
+  }
 
-.btn:disabled {
-  pointer-events: none;
+  &:hover {
+    border-color: $neutral-600;
+  }
+
+  &:disabled {
+    pointer-events: none;
+  }
 }
 
 /* 收藏/試穿 */

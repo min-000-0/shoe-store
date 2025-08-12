@@ -1,0 +1,20 @@
+.check-icon-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: $primary-300;
+  color: $primary-500;
+}
+
+.store-hours {
+  background-color: $primary-100;
+  color: $primary-400;
+}
+
+.favorites-product-img {
+  width: 120px;
+  height: 120px;
+}
