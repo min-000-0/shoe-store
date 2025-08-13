@@ -1,0 +1,61 @@
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.px-80 {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.tab {
+  color: $neutral-600;
+  background-color: transparent;
+  padding: 12px 0;
+  border: none;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $neutral-300;
+  }
+
+  &.active {
+    color: $neutral-900;
+
+    &::before {
+      background-color: $neutral-900;
+    }
+  }
+}
+
+.login-img img {
+  width: auto;
+  height: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.social-login-btn {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid $neutral-300;
+  padding: 12px;
+  font-weight: 400;
+}
+
+.auth-card {
+  background-image: url(/assets/images/login/login-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}

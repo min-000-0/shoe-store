@@ -15,6 +15,16 @@
   margin-right: -110px;
 }
 
+@media (max-width: 767px) {
+  .text-container {
+    margin: -4px 0;
+  }
+
+  .responsive-text {
+    line-height: calc(1.2em + 4px);
+  }
+}
+
 .history-disc {
   border-left: 1px solid $neutral-900;
   padding-left: 8px;
