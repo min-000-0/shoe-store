@@ -153,6 +153,14 @@
   display: flex;
 }
 
+.d-inline-flex {
+  display: inline-flex;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
 .flex-column {
   flex-direction: column;
 }

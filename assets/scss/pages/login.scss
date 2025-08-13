@@ -8,6 +8,17 @@
   padding-right: 80px;
 }
 
+@media (max-width: 767px) {
+  .py-md-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .px-md-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .tab {
   color: $neutral-600;
   background-color: transparent;
@@ -48,6 +59,17 @@
   }
 }
 
+@media (max-width: 767px) {
+  .login-img-wrap {
+    border-radius: 0;
+    margin: 0 -12px;
+
+    img {
+      position: relative;
+    }
+  }
+}
+
 .social-login-btn {
   width: 100%;
   display: flex;
@@ -66,4 +88,10 @@
   background-position: center;
   background-repeat: no-repeat;
   border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+  .auth-card {
+    background-image: none;
+  }
 }
