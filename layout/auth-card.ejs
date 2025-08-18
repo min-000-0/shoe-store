@@ -1,0 +1,37 @@
+<% const isLogin = mode === 'login'; %>
+<div class="py-120 py-md-32 px-80 px-md-0 auth-card">
+  <h1 class="h3 h4-md mb-32 mb-md-24 text-center">歡迎！</h1>
+  <nav class="tabs d-flex w-100 mb-32" aria-label="Auth tabs">
+    <a
+      class="tab w-50 h6 text-center <%= isLogin ? 'active' : '' %>"
+      href="./login.html"
+      >登入</a
+    >
+    <a
+      class="tab w-50 h6 text-center <%= !isLogin ? 'active' : '' %>"
+      href="./register.html"
+      >註冊</a
+    >
+  </nav>
+
+  <ul class="social-list">
+    <li class="mb-8">
+      <button type="button" class="btn social-login-btn w-100">
+        <img src="/assets/images/icons/facebook.svg" alt="Facebook" />
+        Facebook <%= isLogin ? '登入' : '註冊' %>
+      </button>
+    </li>
+    <li class="mb-8">
+      <button type="button" class="btn social-login-btn w-100">
+        <img src="/assets/images/icons/apple.svg" alt="Apple" />
+        Apple <%= isLogin ? '登入' : '註冊' %>
+      </button>
+    </li>
+    <li>
+      <button type="button" class="btn social-login-btn w-100">
+        <img src="/assets/images/icons/google.svg" alt="Google" />
+        Google <%= isLogin ? '登入' : '註冊' %>
+      </button>
+    </li>
+  </ul>
+</div>

@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
   <head>
-    <%- include('./layout/head') -%>
-    <title>立即登入</title>
+    <%- include('./layout/head.ejs') -%>
+    <title>立即註冊</title>
   </head>
   <body>
     <%- include('./layout/header.ejs') -%>
-
     <main class="container py-64 py-md-0">
       <div class="row flex-md-column">
         <!-- 圖片-->
@@ -23,11 +22,10 @@
         </div>
         <!-- 卡片 -->
         <div class="col-7 col-md-4">
-          <%- include('./layout/auth-card.ejs', { mode: 'login' }) %>
+          <%- include('./layout/auth-card.ejs', { mode: 'register' }) %>
         </div>
       </div>
     </main>
-
     <%- include('./layout/footer.ejs', { hideBanner: true }) %>
     <script type="module" src="../main.js"></script>
   </body>
