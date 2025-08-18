@@ -79,7 +79,7 @@
   padding-right: 12px;
 }
 
-@media (max-width: 992px) {
+@include respond-to(lg) {
   .col-lg-4 {
     padding-left: 12px;
     padding-right: 12px;
@@ -87,7 +87,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .row {
     margin-left: -6px;
     margin-right: -6px;
@@ -129,7 +129,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .overflow-x-md-auto {
     overflow-x: auto;
   }
@@ -169,7 +169,7 @@
   display: none;
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .d-md-block {
     display: block;
   }
@@ -181,7 +181,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@include respond-to(sm) {
   .d-sm-block {
     display: block;
   }
@@ -228,7 +228,7 @@
   text-align: end;
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .text-md-start {
     text-align: left;
   }
@@ -297,13 +297,14 @@
   line-height: 1.2;
   letter-spacing: 0.05em;
 }
-@media (max-width: 1200px) {
+
+@include respond-to(lg) {
   .h5-lg {
     font-size: 20px;
   }
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .display2-md {
     font-size: 48px;
   }
@@ -327,7 +328,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@include respond-to(sm) {
   .h3-sm {
     font-size: 28px;
   }
@@ -355,7 +356,7 @@
   font-size: 20px;
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .text-md-md {
     font-size: 16px;
   }
@@ -501,7 +502,7 @@
   padding-right: 8px;
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .p-md-24 {
     padding: 24px;
   }
@@ -542,7 +543,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@include respond-to(sm) {
   .px-sm-12 {
     padding-left: 12px;
     padding-right: 12px;
@@ -639,7 +640,7 @@
   margin-left: 50%;
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .mb-md-0 {
     margin-bottom: 0;
   }
@@ -660,7 +661,7 @@
   }
 }
 
-@media (max-width: 576px) {
+@include respond-to(sm) {
   .me-sm-0 {
     margin-right: 0;
   }

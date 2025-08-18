@@ -20,7 +20,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .breadcrumb-item + .breadcrumb-item::before {
     padding: 0 8px;
   }

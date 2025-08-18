@@ -13,7 +13,8 @@
     left: 200px;
     transform: translate(0, -50%);
   }
-  @media (max-width: 767px) {
+
+  @include respond-to(md) {
     .banner-content {
       left: 24px;
     }
@@ -43,7 +44,7 @@
     right: calc(50% - 357px);
   }
 
-  @media (max-width: 767px) {
+  @include respond-to(md) {
     padding: 64px 0;
     background-image: url(/assets/images/banners/banner-co-branded-sm.png);
     overflow: hidden;
@@ -71,9 +72,8 @@
   background-repeat: no-repeat;
   padding: 152px 0;
   text-align: center;
-}
-@media (max-width: 767px) {
-  .brand-story-banner {
+
+  @include respond-to(md) {
     padding: 87px 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
       url(../images/heroes/hero-sm.png);

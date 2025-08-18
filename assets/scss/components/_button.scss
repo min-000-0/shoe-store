@@ -28,7 +28,7 @@
       box-shadow: 0 0 0 3px rgba($neutral-900, 0.1);
     }
 
-    @media (max-width: 767px) {
+    @include respond-to(md) {
       &.btn-icon {
         &:hover {
           background-color: transparent;
@@ -69,16 +69,12 @@
       box-shadow: 0 0 0 3px rgba($primary-300, 0.1);
     }
   }
-}
 
-.btn {
-  @media (max-width: 767px) {
+  @include respond-to(md) {
     padding: 12px 24px;
   }
-}
 
-@media (max-width: 576px) {
-  .btn {
+  @include respond-to(sm) {
     padding: 8px 16px;
   }
 }

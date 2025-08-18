@@ -1,0 +1,14 @@
+// 定義斷點變數
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+);
+
+// 簡化用的 mixin
+@mixin respond-to($bp) {
+  @media (max-width: map-get($breakpoints, $bp)) {
+    @content;
+  }
+}

@@ -1,5 +1,6 @@
-// 變數、通用樣式
+// 變數、mixin、工具
 @import "./helper/variables";
+@import "./helper/mixin";
 @import "./helper/utils";
 
 // 第三方套件
@@ -26,4 +27,4 @@
 @import "./pages/product-detail";
 @import "./pages/brand-story";
 @import "./pages/favorites";
-@import "./pages/login";
+@import "./pages/auth";

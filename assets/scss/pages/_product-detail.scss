@@ -4,19 +4,18 @@
   flex-wrap: wrap;
   margin-left: -4px;
   margin-right: -4px;
+
+  @include respond-to(lg) {
+    margin-bottom: 40px;
+  }
 }
 
 .product-col {
   width: calc(100% / 12 * 6);
   padding-right: 4px;
   padding-left: 4px;
-}
 
-@media (max-width: 992px) {
-  .product-row {
-    margin-bottom: 40px;
-  }
-  .product-col {
+  @include respond-to(lg) {
     width: calc(100% / 12 * 3);
   }
 }
@@ -80,7 +79,7 @@
     margin-right: 8px;
   }
 
-  @media (max-width: 767px) {
+  @include respond-to(md) {
     .btn-light {
       width: 48px;
       height: 48px;

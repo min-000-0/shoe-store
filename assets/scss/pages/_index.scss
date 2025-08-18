@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .product-md-row {
     margin-left: -8px;
     margin-right: -12px;
@@ -82,7 +82,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@include respond-to(md) {
   .inspiration-row {
     flex-wrap: nowrap;
     margin: 0 -12px 0 -8px;
